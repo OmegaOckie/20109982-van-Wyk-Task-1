@@ -10,6 +10,7 @@ namespace _20109982_van_Wyk_POE
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Hello World");
         }
     }
 }
