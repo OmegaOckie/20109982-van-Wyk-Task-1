@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace _20109982_van_Wyk_POE
 {
-    class Obstacle : Tile
+    class Obstacle : Tile // subclass
     {
-        public Obstacle(int ObstacleX, int ObstacleY)
+        public Obstacle(int obstacleX, int obstacleY) : base ( obstacleX, obstacleY)
         {
-            x = ObstacleX;
-            y = ObstacleY;
+            x = obstacleX;
+            y = obstacleY;
         }
     }
 }
