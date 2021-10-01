@@ -16,5 +16,10 @@ namespace _20109982_van_Wyk_POE
         {
             InitializeComponent();
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
