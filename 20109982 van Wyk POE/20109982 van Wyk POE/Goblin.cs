@@ -31,7 +31,7 @@ namespace _20109982_van_Wyk_POE
         /// </summary>
         /// <param name="move"></param>
         /// <returns></returns>
-        public override Movement ReturnMove(Movement move = Movement.NONE)
+        public override Movement ReturnMove(Movement move)
         {
             int direction = rng.Next(4);
             switch (direction)
@@ -78,7 +78,6 @@ namespace _20109982_van_Wyk_POE
                     break;
                 default:
                     return Movement.NONE;
-                    break;
             }
         }
     }

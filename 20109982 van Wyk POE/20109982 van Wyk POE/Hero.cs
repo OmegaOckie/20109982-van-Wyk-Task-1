@@ -26,9 +26,25 @@ namespace _20109982_van_Wyk_POE
 
         public override Movement ReturnMove(Movement move)
         {
-            if (Keyboa)
+            if (move == Movement.UP && characterVision[0] == null)
             {
-
+                return Movement.UP;
+            }
+            else if (move == Movement.DOWN && characterVision[1] == null)
+            {
+                return Movement.DOWN;
+            }
+            else if (move == Movement.LEFT && characterVision[2] == null)
+            {
+                return Movement.LEFT;
+            }
+            else if (move == Movement.RIGHT && characterVision[3] == null)
+            {
+                return Movement.RIGHT;
+            }
+            else
+            {
+                return Movement.NONE;
             }
         }
 
